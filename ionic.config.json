@@ -1,0 +1,7 @@
+{
+  "name": "Eduardo-prova-pdm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
