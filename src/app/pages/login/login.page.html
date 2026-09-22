@@ -1,0 +1,68 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+
+  <div class="login-container">
+
+    <div class="header">
+      <h1>Bar do Joaquim</h1>
+      <p>Entre e peça no bar</p>
+    </div>
+    <div class="corpo">
+      <form (ngSubmit)="entrar()">
+
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input
+            type="email"
+            [(ngModel)]="email"
+            name="email"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input
+            type="password"
+            [(ngModel)]="senha"
+            name="senha"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <ion-button
+          expand="block"
+          type="submit"
+          class="login-button">
+          Entrar no bar
+        </ion-button>
+
+      </form>
+
+      <div class="divider">
+        <span>ou</span>
+      </div>
+
+      <ion-button
+        expand="block"
+        fill="outline"
+        (click)="entrarComGoogle()">
+
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+
+        Entrar com Google
+
+      </ion-button>
+
+      <div class="register">
+        <ion-button
+          fill="clear"
+          (click)="irParaCadastro()">
+          Ainda não tenho cadastro
+        </ion-button>
+      </div>
+    
+    </div>
+  </div>
+
+</ion-content>

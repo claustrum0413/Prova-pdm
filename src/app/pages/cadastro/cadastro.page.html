@@ -1,0 +1,50 @@
+<app-header></app-header>
+<h1>Nova ficha do bar</h1>
+
+<p>Cadastro para pedir no bar</p>
+
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input
+    type="text"
+    [(ngModel)]="nome"
+    name="nome">
+  </ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">E-mail</ion-label>
+  <ion-input
+    type="email"
+    [(ngModel)]="email"
+    name="email">
+  </ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Senha</ion-label>
+  <ion-input
+    type="password"
+    [(ngModel)]="senha"
+    name="senha">
+  </ion-input>
+</ion-item>
+
+<ion-button
+  expand="block"
+  (click)="cadastrar()">
+  Criar conta
+</ion-button>
+
+<ion-button
+  expand="block"
+  fill="outline"
+  (click)="cadastrarComGoogle()">
+  Continuar com Google
+</ion-button>
+
+<ion-button
+  fill="clear"
+  (click)="irParaLogin()">
+  Já tenho ficha
+</ion-button>
